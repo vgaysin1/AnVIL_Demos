@@ -4,8 +4,8 @@ rmd_files: ["index.Rmd",
             "01-what-is-anvil.Rmd",
             "02-scale-with-workflows.Rmd",
             "03-single-cell-with-bioconductor.Rmd",
-            "04-create-workflows-with-galaxy.Rmd",
-            "05-fastqc-galaxy-in-anvil.Rmd"]
+            "05-fastqc-galaxy-in-anvil.Rmd",
+            "human-genetic-variation-in-mage.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
