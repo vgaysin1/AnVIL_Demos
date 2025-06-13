@@ -1,0 +1,75 @@
+
+
+# (PART\*) Human Genetic Variation in MAGE {-}   
+
+# Overview {#human-genetic-variation-in-mage-overview}
+
+Introduce AnVIL, Bioconductor, and Galaxy using MAGE
+
+## Learning Objectives
+
+1. Explore MAGE Workspace 
+1. Analysis with Jupyter/Terminal
+1. Bioconductor with RStudio
+1. Workflows with Galaxy
+
+# Preparation {#human-genetic-variation-in-mage-preparation}
+
+## Review Background
+
+## Create AnVIL Account
+
+## Clone Workspace
+
+# Exercises {#human-genetic-variation-in-mage-exercises}
+
+## Explore MAGE Workspace
+
+### Review Key Concepts
+
+### Scavenger Hunt
+
+## Analysis with Jupyter/Terminal
+
+### Launch Jupyter
+
+### Review Key Concepts
+
+### Enter Terminal
+
+### Run Jupyter Notebook
+
+### Next Steps
+
+## Bioconductor with RStudio
+
+### Launch RStudio
+
+### Review Key Concepts
+
+### Use AnVILGCP
+
+### Run R Notebook
+
+### Next Steps
+
+## Workflows with Galaxy
+
+### Launch Galaxy
+
+### Review Key Concepts
+
+### Run FastQC
+
+### Install Tool
+
+### Next Steps
+
+# Wrap Up {#human-genetic-variation-in-mage-wrap-up}
+
+## Shut Down Copmute
+
+## Provide Feedback
+
+## Learn More
+

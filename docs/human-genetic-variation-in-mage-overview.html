@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>17 Overview | AnVIL Demos</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="17 Overview | AnVIL Demos" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="17 Overview | AnVIL Demos" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+<meta name="date" content="2025-06-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
+<link rel="prev" href="run-tool-with-galaxy-next-steps.html"/>
+<link rel="next" href="human-genetic-variation-in-mage-preparation.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L4S1S1ZKYM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L4S1S1ZKYM');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #204a87; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/AnVIL_style/anvil.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://anvilproject.org/" target="_blank"><img src="assets/AnVIL_style/logo-anvil.png" style="width: 80%; padding-left: 15px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Series</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#anvil-monthly-demos"><i class="fa fa-check"></i>AnVIL Monthly Demos</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#anvil-collection"><i class="fa fa-check"></i>AnVIL Collection</a></li>
+</ul></li>
+<li class="part"><span><b>What is AnVIL</b></span></li>
+<li class="chapter" data-level="1" data-path="what-is-anvil-overview.html"><a href="what-is-anvil-overview.html"><i class="fa fa-check"></i><b>1</b> Overview</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="what-is-anvil-overview.html"><a href="what-is-anvil-overview.html#background"><i class="fa fa-check"></i><b>1.1</b> Background</a></li>
+<li class="chapter" data-level="1.2" data-path="what-is-anvil-overview.html"><a href="what-is-anvil-overview.html#about-this-demo"><i class="fa fa-check"></i><b>1.2</b> About this Demo</a></li>
+<li class="chapter" data-level="1.3" data-path="what-is-anvil-overview.html"><a href="what-is-anvil-overview.html#skills-level"><i class="fa fa-check"></i><b>1.3</b> Skills Level</a></li>
+<li class="chapter" data-level="1.4" data-path="what-is-anvil-overview.html"><a href="what-is-anvil-overview.html#learning-objectives"><i class="fa fa-check"></i><b>1.4</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="what-is-anvil-preparation.html"><a href="what-is-anvil-preparation.html"><i class="fa fa-check"></i><b>2</b> Preparation</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="what-is-anvil-preparation.html"><a href="what-is-anvil-preparation.html#review-key-concepts"><i class="fa fa-check"></i><b>2.1</b> Review Key Concepts</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html"><i class="fa fa-check"></i><b>3</b> Exercises</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#launch-terra"><i class="fa fa-check"></i><b>3.1</b> Launch Terra</a></li>
+<li class="chapter" data-level="3.2" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#clone-hprc-workspace"><i class="fa fa-check"></i><b>3.2</b> Clone HPRC Workspace</a></li>
+<li class="chapter" data-level="3.3" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#start-a-cloud-environment"><i class="fa fa-check"></i><b>3.3</b> Start a Cloud Environment</a></li>
+<li class="chapter" data-level="3.4" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#find-tidbits"><i class="fa fa-check"></i><b>3.4</b> Find Tidbits</a></li>
+<li class="chapter" data-level="3.5" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#enter-terminal"><i class="fa fa-check"></i><b>3.5</b> Enter Terminal</a></li>
+<li class="chapter" data-level="3.6" data-path="what-is-anvil-exercises.html"><a href="what-is-anvil-exercises.html#shut-down"><i class="fa fa-check"></i><b>3.6</b> Shut Down</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="what-is-anvil-instructor-guide.html"><a href="what-is-anvil-instructor-guide.html"><i class="fa fa-check"></i><b>4</b> Instructor Guide</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="what-is-anvil-instructor-guide.html"><a href="what-is-anvil-instructor-guide.html#timeline"><i class="fa fa-check"></i><b>4.1</b> Timeline</a></li>
+</ul></li>
+<li class="part"><span><b>Scale with Workflows</b></span></li>
+<li class="chapter" data-level="5" data-path="scale-with-workflows-overview.html"><a href="scale-with-workflows-overview.html"><i class="fa fa-check"></i><b>5</b> Overview</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="scale-with-workflows-overview.html"><a href="scale-with-workflows-overview.html#skills-level-1"><i class="fa fa-check"></i><b>5.1</b> Skills Level</a></li>
+<li class="chapter" data-level="5.2" data-path="scale-with-workflows-overview.html"><a href="scale-with-workflows-overview.html#learning-objectives-1"><i class="fa fa-check"></i><b>5.2</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="scale-with-workflows-preparation.html"><a href="scale-with-workflows-preparation.html"><i class="fa fa-check"></i><b>6</b> Preparation</a>
+<ul>
+<li class="chapter" data-level="" data-path="scale-with-workflows-preparation.html"><a href="scale-with-workflows-preparation.html#quickstart"><i class="fa fa-check"></i>Quickstart</a></li>
+<li class="chapter" data-level="6.1" data-path="scale-with-workflows-preparation.html"><a href="scale-with-workflows-preparation.html#review-key-concepts-1"><i class="fa fa-check"></i><b>6.1</b> Review Key Concepts</a></li>
+<li class="chapter" data-level="6.2" data-path="scale-with-workflows-preparation.html"><a href="scale-with-workflows-preparation.html#create-anvil-account"><i class="fa fa-check"></i><b>6.2</b> Create AnVIL account</a></li>
+<li class="chapter" data-level="6.3" data-path="scale-with-workflows-preparation.html"><a href="scale-with-workflows-preparation.html#clone-workspace"><i class="fa fa-check"></i><b>6.3</b> Clone Workspace</a></li>
+<li class="chapter" data-level="6.4" data-path="scale-with-workflows-preparation.html"><a href="scale-with-workflows-preparation.html#start-cloud-environment"><i class="fa fa-check"></i><b>6.4</b> Start Cloud Environment</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html"><i class="fa fa-check"></i><b>7</b> Exercises</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#explore-dataset-catalog"><i class="fa fa-check"></i><b>7.1</b> Explore Dataset Catalog</a></li>
+<li class="chapter" data-level="7.2" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#explore-hprc-workspace"><i class="fa fa-check"></i><b>7.2</b> Explore HPRC Workspace</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#what-is-a-workspace"><i class="fa fa-check"></i><b>7.2.1</b> What is a Workspace?</a></li>
+<li class="chapter" data-level="7.2.2" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#dashboard"><i class="fa fa-check"></i><b>7.2.2</b> Dashboard</a></li>
+<li class="chapter" data-level="7.2.3" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#data"><i class="fa fa-check"></i><b>7.2.3</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#combine-data-workspace"><i class="fa fa-check"></i><b>7.3</b> Combine Data Workspace</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#open-your-workspace"><i class="fa fa-check"></i><b>7.3.1</b> Open your Workspace</a></li>
+<li class="chapter" data-level="7.3.2" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#open-jupyter-notebook"><i class="fa fa-check"></i><b>7.3.2</b> Open Jupyter Notebook</a></li>
+<li class="chapter" data-level="7.3.3" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#load-packages"><i class="fa fa-check"></i><b>7.3.3</b> Load Packages</a></li>
+<li class="chapter" data-level="7.3.4" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#retrieve-original-file-locations"><i class="fa fa-check"></i><b>7.3.4</b> Retrieve original file locations</a></li>
+<li class="chapter" data-level="7.3.5" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#exported-combined-data-table"><i class="fa fa-check"></i><b>7.3.5</b> Exported combined Data Table</a></li>
+<li class="chapter" data-level="7.3.6" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#session-info"><i class="fa fa-check"></i><b>7.3.6</b> Session Info</a></li>
+<li class="chapter" data-level="7.3.7" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#view-your-new-data-table"><i class="fa fa-check"></i><b>7.3.7</b> View your new Data Table</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#explore-dockstore-workflows"><i class="fa fa-check"></i><b>7.4</b> Explore Dockstore Workflows</a></li>
+<li class="chapter" data-level="7.5" data-path="scale-with-workflows-exercises.html"><a href="scale-with-workflows-exercises.html#run-qc-analysis-pipeline"><i class="fa fa-check"></i><b>7.5</b> Run qc-analysis-pipeline</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="scale-with-workflows-instructor-guide.html"><a href="scale-with-workflows-instructor-guide.html"><i class="fa fa-check"></i><b>8</b> Instructor Guide</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="scale-with-workflows-instructor-guide.html"><a href="scale-with-workflows-instructor-guide.html#timeline-1"><i class="fa fa-check"></i><b>8.1</b> Timeline</a></li>
+<li class="chapter" data-level="8.2" data-path="scale-with-workflows-instructor-guide.html"><a href="scale-with-workflows-instructor-guide.html#example"><i class="fa fa-check"></i><b>8.2</b> Example</a></li>
+</ul></li>
+<li class="part"><span><b>Single Cell with Bioconductor</b></span></li>
+<li class="chapter" data-level="9" data-path="single-cell-with-bioconductor-overview.html"><a href="single-cell-with-bioconductor-overview.html"><i class="fa fa-check"></i><b>9</b> Overview</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="single-cell-with-bioconductor-overview.html"><a href="single-cell-with-bioconductor-overview.html#skills-level-2"><i class="fa fa-check"></i><b>9.1</b> Skills Level</a></li>
+<li class="chapter" data-level="9.2" data-path="single-cell-with-bioconductor-overview.html"><a href="single-cell-with-bioconductor-overview.html#learning-objectives-2"><i class="fa fa-check"></i><b>9.2</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="single-cell-with-bioconductor-preparation.html"><a href="single-cell-with-bioconductor-preparation.html"><i class="fa fa-check"></i><b>10</b> Preparation</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="single-cell-with-bioconductor-preparation.html"><a href="single-cell-with-bioconductor-preparation.html#review-background"><i class="fa fa-check"></i><b>10.1</b> Review Background</a></li>
+<li class="chapter" data-level="10.2" data-path="single-cell-with-bioconductor-preparation.html"><a href="single-cell-with-bioconductor-preparation.html#create-anvil-account-1"><i class="fa fa-check"></i><b>10.2</b> Create AnVIL account</a></li>
+<li class="chapter" data-level="10.3" data-path="single-cell-with-bioconductor-preparation.html"><a href="single-cell-with-bioconductor-preparation.html#clone-workspace-1"><i class="fa fa-check"></i><b>10.3</b> Clone Workspace</a></li>
+<li class="chapter" data-level="10.4" data-path="single-cell-with-bioconductor-preparation.html"><a href="single-cell-with-bioconductor-preparation.html#start-cloud-environment-1"><i class="fa fa-check"></i><b>10.4</b> Start Cloud Environment</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="single-cell-with-bioconductor-preparation.html"><a href="single-cell-with-bioconductor-preparation.html#video-overview"><i class="fa fa-check"></i><b>10.4.1</b> Video Overview</a></li>
+<li class="chapter" data-level="10.4.2" data-path="single-cell-with-bioconductor-preparation.html"><a href="single-cell-with-bioconductor-preparation.html#objectives"><i class="fa fa-check"></i><b>10.4.2</b> Objectives</a></li>
+<li class="chapter" data-level="10.4.3" data-path="single-cell-with-bioconductor-preparation.html"><a href="single-cell-with-bioconductor-preparation.html#slides"><i class="fa fa-check"></i><b>10.4.3</b> Slides</a></li>
+<li class="chapter" data-level="10.4.4" data-path="single-cell-with-bioconductor-preparation.html"><a href="single-cell-with-bioconductor-preparation.html#launching-rstudio"><i class="fa fa-check"></i><b>10.4.4</b> Launching RStudio</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="single-cell-with-bioconductor-exercises.html"><a href="single-cell-with-bioconductor-exercises.html"><i class="fa fa-check"></i><b>11</b> Exercises</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="single-cell-with-bioconductor-exercises.html"><a href="single-cell-with-bioconductor-exercises.html#loading-the-data"><i class="fa fa-check"></i><b>11.1</b> Loading the Data</a></li>
+<li class="chapter" data-level="11.2" data-path="single-cell-with-bioconductor-exercises.html"><a href="single-cell-with-bioconductor-exercises.html#installing-isee"><i class="fa fa-check"></i><b>11.2</b> Installing <code>iSEE</code></a></li>
+<li class="chapter" data-level="11.3" data-path="single-cell-with-bioconductor-exercises.html"><a href="single-cell-with-bioconductor-exercises.html#panel-display"><i class="fa fa-check"></i><b>11.3</b> Panel Display</a></li>
+<li class="chapter" data-level="11.4" data-path="single-cell-with-bioconductor-exercises.html"><a href="single-cell-with-bioconductor-exercises.html#visualize-cell-type-assignment"><i class="fa fa-check"></i><b>11.4</b> Visualize Cell Type Assignment</a></li>
+<li class="chapter" data-level="11.5" data-path="single-cell-with-bioconductor-exercises.html"><a href="single-cell-with-bioconductor-exercises.html#visualize-expression-of-a-single-gene"><i class="fa fa-check"></i><b>11.5</b> Visualize Expression of a Single Gene</a></li>
+<li class="chapter" data-level="11.6" data-path="single-cell-with-bioconductor-exercises.html"><a href="single-cell-with-bioconductor-exercises.html#get-session-info"><i class="fa fa-check"></i><b>11.6</b> Get Session Info</a></li>
+<li class="chapter" data-level="11.7" data-path="single-cell-with-bioconductor-exercises.html"><a href="single-cell-with-bioconductor-exercises.html#shutting-down"><i class="fa fa-check"></i><b>11.7</b> Shutting Down</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="instructor-guide.html"><a href="instructor-guide.html"><i class="fa fa-check"></i><b>12</b> Instructor Guide</a></li>
+<li class="part"><span><b>Run a Tool With Galaxy</b></span></li>
+<li class="chapter" data-level="13" data-path="run-tool-with-galaxy-overview.html"><a href="run-tool-with-galaxy-overview.html"><i class="fa fa-check"></i><b>13</b> Overview</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="run-tool-with-galaxy-overview.html"><a href="run-tool-with-galaxy-overview.html#learning-objectives-3"><i class="fa fa-check"></i><b>13.1</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="run-tool-with-galaxy-getting-started.html"><a href="run-tool-with-galaxy-getting-started.html"><i class="fa fa-check"></i><b>14</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="run-tool-with-galaxy-getting-started.html"><a href="run-tool-with-galaxy-getting-started.html#account-login"><i class="fa fa-check"></i><b>14.1</b> Account Login</a></li>
+<li class="chapter" data-level="14.2" data-path="run-tool-with-galaxy-getting-started.html"><a href="run-tool-with-galaxy-getting-started.html#workspace-set-up"><i class="fa fa-check"></i><b>14.2</b> Workspace Set Up</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="run-tool-with-galaxy-activity.html"><a href="run-tool-with-galaxy-activity.html"><i class="fa fa-check"></i><b>15</b> Activity</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="run-tool-with-galaxy-activity.html"><a href="run-tool-with-galaxy-activity.html#launching-galaxy-on-anvil"><i class="fa fa-check"></i><b>15.1</b> Launching Galaxy on AnVIL</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="run-tool-with-galaxy-activity.html"><a href="run-tool-with-galaxy-activity.html#navigating-galaxy-on-anvil"><i class="fa fa-check"></i><b>15.1.1</b> Navigating Galaxy on AnVIL</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="run-tool-with-galaxy-activity.html"><a href="run-tool-with-galaxy-activity.html#importing-data-into-galaxy-on-anvil"><i class="fa fa-check"></i><b>15.2</b> Importing Data into Galaxy on AnVIL</a></li>
+<li class="chapter" data-level="15.3" data-path="run-tool-with-galaxy-activity.html"><a href="run-tool-with-galaxy-activity.html#examining-fastq-sequence-data-files"><i class="fa fa-check"></i><b>15.3</b> Examining <code>fastq</code> sequence data files</a></li>
+<li class="chapter" data-level="15.4" data-path="run-tool-with-galaxy-activity.html"><a href="run-tool-with-galaxy-activity.html#finding-and-using-fastqc"><i class="fa fa-check"></i><b>15.4</b> Finding and Using FastQC</a></li>
+<li class="chapter" data-level="15.5" data-path="run-tool-with-galaxy-activity.html"><a href="run-tool-with-galaxy-activity.html#examining-the-fastqc-quality-control-summary-report"><i class="fa fa-check"></i><b>15.5</b> Examining the FastQC quality control summary report</a></li>
+<li class="chapter" data-level="15.6" data-path="run-tool-with-galaxy-activity.html"><a href="run-tool-with-galaxy-activity.html#exporting-your-results"><i class="fa fa-check"></i><b>15.6</b> Exporting your results</a></li>
+<li class="chapter" data-level="15.7" data-path="run-tool-with-galaxy-activity.html"><a href="run-tool-with-galaxy-activity.html#shutting-down-galaxy-on-anvil"><i class="fa fa-check"></i><b>15.7</b> Shutting down Galaxy on AnVIL</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="run-tool-with-galaxy-next-steps.html"><a href="run-tool-with-galaxy-next-steps.html"><i class="fa fa-check"></i><b>16</b> Next steps</a></li>
+<li class="part"><span><b>Human Genetic Variation in MAGE</b></span></li>
+<li class="chapter" data-level="17" data-path="human-genetic-variation-in-mage-overview.html"><a href="human-genetic-variation-in-mage-overview.html"><i class="fa fa-check"></i><b>17</b> Overview</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="human-genetic-variation-in-mage-overview.html"><a href="human-genetic-variation-in-mage-overview.html#learning-objectives-4"><i class="fa fa-check"></i><b>17.1</b> Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="human-genetic-variation-in-mage-preparation.html"><a href="human-genetic-variation-in-mage-preparation.html"><i class="fa fa-check"></i><b>18</b> Preparation</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="human-genetic-variation-in-mage-preparation.html"><a href="human-genetic-variation-in-mage-preparation.html#review-background-1"><i class="fa fa-check"></i><b>18.1</b> Review Background</a></li>
+<li class="chapter" data-level="18.2" data-path="human-genetic-variation-in-mage-preparation.html"><a href="human-genetic-variation-in-mage-preparation.html#create-anvil-account-2"><i class="fa fa-check"></i><b>18.2</b> Create AnVIL Account</a></li>
+<li class="chapter" data-level="18.3" data-path="human-genetic-variation-in-mage-preparation.html"><a href="human-genetic-variation-in-mage-preparation.html#clone-workspace-2"><i class="fa fa-check"></i><b>18.3</b> Clone Workspace</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html"><i class="fa fa-check"></i><b>19</b> Exercises</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#explore-mage-workspace"><i class="fa fa-check"></i><b>19.1</b> Explore MAGE Workspace</a>
+<ul>
+<li class="chapter" data-level="19.1.1" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#review-key-concepts-2"><i class="fa fa-check"></i><b>19.1.1</b> Review Key Concepts</a></li>
+<li class="chapter" data-level="19.1.2" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#scavenger-hunt"><i class="fa fa-check"></i><b>19.1.2</b> Scavenger Hunt</a></li>
+</ul></li>
+<li class="chapter" data-level="19.2" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#analysis-with-jupyterterminal"><i class="fa fa-check"></i><b>19.2</b> Analysis with Jupyter/Terminal</a>
+<ul>
+<li class="chapter" data-level="19.2.1" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#launch-jupyter"><i class="fa fa-check"></i><b>19.2.1</b> Launch Jupyter</a></li>
+<li class="chapter" data-level="19.2.2" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#review-key-concepts-3"><i class="fa fa-check"></i><b>19.2.2</b> Review Key Concepts</a></li>
+<li class="chapter" data-level="19.2.3" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#enter-terminal-1"><i class="fa fa-check"></i><b>19.2.3</b> Enter Terminal</a></li>
+<li class="chapter" data-level="19.2.4" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#run-jupyter-notebook"><i class="fa fa-check"></i><b>19.2.4</b> Run Jupyter Notebook</a></li>
+<li class="chapter" data-level="19.2.5" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#next-steps"><i class="fa fa-check"></i><b>19.2.5</b> Next Steps</a></li>
+</ul></li>
+<li class="chapter" data-level="19.3" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#bioconductor-with-rstudio"><i class="fa fa-check"></i><b>19.3</b> Bioconductor with RStudio</a>
+<ul>
+<li class="chapter" data-level="19.3.1" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#launch-rstudio"><i class="fa fa-check"></i><b>19.3.1</b> Launch RStudio</a></li>
+<li class="chapter" data-level="19.3.2" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#review-key-concepts-4"><i class="fa fa-check"></i><b>19.3.2</b> Review Key Concepts</a></li>
+<li class="chapter" data-level="19.3.3" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#use-anvilgcp"><i class="fa fa-check"></i><b>19.3.3</b> Use AnVILGCP</a></li>
+<li class="chapter" data-level="19.3.4" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#run-r-notebook"><i class="fa fa-check"></i><b>19.3.4</b> Run R Notebook</a></li>
+<li class="chapter" data-level="19.3.5" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#next-steps-1"><i class="fa fa-check"></i><b>19.3.5</b> Next Steps</a></li>
+</ul></li>
+<li class="chapter" data-level="19.4" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#workflows-with-galaxy"><i class="fa fa-check"></i><b>19.4</b> Workflows with Galaxy</a>
+<ul>
+<li class="chapter" data-level="19.4.1" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#launch-galaxy"><i class="fa fa-check"></i><b>19.4.1</b> Launch Galaxy</a></li>
+<li class="chapter" data-level="19.4.2" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#review-key-concepts-5"><i class="fa fa-check"></i><b>19.4.2</b> Review Key Concepts</a></li>
+<li class="chapter" data-level="19.4.3" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#run-fastqc"><i class="fa fa-check"></i><b>19.4.3</b> Run FastQC</a></li>
+<li class="chapter" data-level="19.4.4" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#install-tool"><i class="fa fa-check"></i><b>19.4.4</b> Install Tool</a></li>
+<li class="chapter" data-level="19.4.5" data-path="human-genetic-variation-in-mage-exercises.html"><a href="human-genetic-variation-in-mage-exercises.html#next-steps-2"><i class="fa fa-check"></i><b>19.4.5</b> Next Steps</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="human-genetic-variation-in-mage-wrap-up.html"><a href="human-genetic-variation-in-mage-wrap-up.html"><i class="fa fa-check"></i><b>20</b> Wrap Up</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="human-genetic-variation-in-mage-wrap-up.html"><a href="human-genetic-variation-in-mage-wrap-up.html#shut-down-copmute"><i class="fa fa-check"></i><b>20.1</b> Shut Down Copmute</a></li>
+<li class="chapter" data-level="20.2" data-path="human-genetic-variation-in-mage-wrap-up.html"><a href="human-genetic-variation-in-mage-wrap-up.html#provide-feedback"><i class="fa fa-check"></i><b>20.2</b> Provide Feedback</a></li>
+<li class="chapter" data-level="20.3" data-path="human-genetic-variation-in-mage-wrap-up.html"><a href="human-genetic-variation-in-mage-wrap-up.html#learn-more"><i class="fa fa-check"></i><b>20.3</b> Learn More</a></li>
+</ul></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<a href="https://hutchdatascience.org/" target="_blank"><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/style-sets/fhdasl/copy_to_assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=AnVIL+Demos"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">AnVIL Demos</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
+</div>
+<div id="human-genetic-variation-in-mage-overview" class="section level1 hasAnchor" number="17">
+<h1><span class="header-section-number">17</span> Overview<a href="human-genetic-variation-in-mage-overview.html#human-genetic-variation-in-mage-overview" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Introduce AnVIL, Bioconductor, and Galaxy using MAGE</p>
+<div id="learning-objectives-4" class="section level2 hasAnchor" number="17.1">
+<h2><span class="header-section-number">17.1</span> Learning Objectives<a href="human-genetic-variation-in-mage-overview.html#learning-objectives-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Explore MAGE Workspace</li>
+<li>Analysis with Jupyter/Terminal</li>
+<li>Bioconductor with RStudio</li>
+<li>Workflows with Galaxy</li>
+</ol>
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="run-tool-with-galaxy-next-steps.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="human-genetic-variation-in-mage-preparation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
