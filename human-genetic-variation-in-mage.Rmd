@@ -69,7 +69,7 @@ Introduce AnVIL, Bioconductor, and Galaxy using MAGE
 
 # Wrap Up {#human-genetic-variation-in-mage-wrap-up}
 
-## Shut Down Copmute
+## Shut Down Compute
 
 ## Provide Feedback
 
